@@ -1,0 +1,141 @@
+/* Importar la fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;  /* Usar Roboto como fuente principal */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f4f4f9, #e0e0e0);  /* Fondo con gradiente suave */
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #007bff, #9c27b0);  /* Gradiente de azul a morado */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra suave para darle profundidad */
+    border-bottom: 3px solid #fff;  /* Borde decorativo en la parte inferior */
+}
+
+header h1 {
+    font-size: 2.8rem;  /* Tamaño más grande para mayor impacto */
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;  /* Convertir el texto a mayúsculas */
+}
+
+.banner {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Centrar las opciones */
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra suave para un efecto flotante */
+}
+
+nav ul li a:hover {
+    background-color: #9c27b0;  /* Fondo morado en hover */
+    color: #fff;
+    border-color: #9c27b0;  /* Borde morado */
+    transform: translateY(-3px);  /* Efecto de elevación */
+}
+
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;  /* Fondo blanco para el área principal */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra para darle profundidad */
+    border-radius: 8px;  /* Bordes redondeados */
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.servicio {
+    border: 2px solid #6a1b9a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;  /* Bordes redondeados */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra para profundidad */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.servicio:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Sombra más intensa al hacer hover */
+    transform: translateY(-5px);  /* Efecto de elevación */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 3px solid #9c27b0;  /* Borde decorativo superior */
+}
+
+footer a {
+    color: #9c27b0;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #fff;  /* Enlaces del footer se vuelven blancos en hover */
+}
+
+/* Animación para el header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Decoración de las secciones */
+section {
+    border-left: 4px solid #9c27b0;  /* Barra decorativa a la izquierda de cada sección */
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+/* Estilo adicional para los servicios */
+.servicio {
+    background: #f9f9f9;  /* Fondo suave para los servicios */
+    border: 2px solid #9c27b0;  /* Borde morado para resaltar */
+}
